@@ -1,0 +1,102 @@
+body{
+  text-align: center;
+}
+.faint,p{
+  color: rgb(200, 193, 193);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  background-image:linear-gradient(to bottom, aqua 2%, transparent 2%, transparent 100%);
+  box-shadow: 0px 0px 5px rgb(138, 137, 137);
+  transition: all 5ms;
+}
+img{
+  width: 50px;
+  align-self: flex-end;
+}
+main{
+  text-align: center;
+  display: grid;
+  margin-left: 5%;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 200px 200px 200px 200px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.one{
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.two{
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.three{
+ grid-column-start: 2;
+ grid-row-start: 3;
+ grid-row-end: 5;
+}
+.four{
+ grid-column-start: 3;
+ grid-row: 2;
+ grid-row-end: 4;
+}
+.container:hover{
+  box-shadow: 5px 10px 5px rgb(138, 137, 137);
+  margin: 10px;
+}
+.two{
+  background-image:linear-gradient(to bottom, red 2%, transparent 2%, transparent 100%);
+}
+
+.three{
+  background-image:linear-gradient(to bottom, yellow 2%, transparent 2%, transparent 100%);
+}
+.four{
+  background-image:linear-gradient(to bottom, blue 2%, transparent 2%, transparent 100%);
+}
+@media(max-width:900px){
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .container{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    background-image:linear-gradient(to bottom, aqua 2%, transparent 2%, transparent 100%);
+    box-shadow: 0px 0px 5px rgb(138, 137, 137);
+    transition: all 5ms;
+  }
+  .container:hover{
+    box-shadow: 5px 10px 5px rgb(138, 137, 137);
+    margin: 10px;
+  }
+  .two{
+    background-image:linear-gradient(to bottom, red 2%, transparent 2%, transparent 100%);
+  }
+
+  .three{
+    background-image:linear-gradient(to bottom, yellow 2%, transparent 2%, transparent 100%);
+  }
+  .four{
+    background-image:linear-gradient(to bottom, blue 2%, transparent 2%, transparent 100%);
+  }
+  img{
+    justify-content: flex-end;
+    align-self: flex-end;
+    width: 50px;
+  }
+}
